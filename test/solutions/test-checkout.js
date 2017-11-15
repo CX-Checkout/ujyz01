@@ -15,12 +15,19 @@ exports['return the price of promoted product with single products'] = function 
     { products: 'A, A, A', result: 130},
     { products: '3A', result: 130},
     { products: 'AAA', result: 130},
-    { products: 'AAAA', result: 195},
-    { products: 'AAAAA', result: 230},
-    { products: 'AAAAAA', result: 260},
+    { products: 'AAAA', result: 180},
+    { products: 'AAAAA', result: 200},
+    { products: 'AAAAAA', result: 250},
     { products: 'BB', result: 45},
     { products: 'BBB', result: 75},
     { products: 'CC', result: 40},
+    { products: 'E', result: 40},
+    { products: 'EE', result: 80},
+    { products: 'EEE', result: 120},
+    { products: 'EEEE', result: 160},
+    { products: 'EEEEBB', result: 160},
+    { products: 'EEEEBBB', result: 190},
+    { products: 'EEEEB', result: 160},
     { products: 'DD', result: 30}
 ]
     .forEach(function (scenario) {
