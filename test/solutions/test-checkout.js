@@ -18,9 +18,14 @@ exports['return the price of promoted product with single products'] = function 
     { products: 'AAAA', result: 180},
     { products: 'AAAAA', result: 200},
     { products: 'AAAAAA', result: 250},
+
     { products: 'BB', result: 45},
     { products: 'BBB', result: 75},
+
     { products: 'CC', result: 40},
+
+    { products: 'DD', result: 30},
+
     { products: 'E', result: 40},
     { products: 'EE', result: 80},
     { products: 'EEE', result: 120},
@@ -28,12 +33,75 @@ exports['return the price of promoted product with single products'] = function 
     { products: 'EEEEBB', result: 160},
     { products: 'EEEEBBB', result: 190},
     { products: 'EEEEB', result: 160},
-	{ products: 'FF', result: 20},
+
+    { products: 'FF', result: 20},
     { products: 'FFF', result: 20},
     { products: 'FFFF', result: 30},
     { products: 'FFFFF', result: 40},
     { products: 'FFFFFF', result: 40},
-    { products: 'DD', result: 30}
+
+    { products: 'GG', result: 40},
+
+    { products: 'HH', result: 20},
+    { products: 'HHHHH', result: 45},
+    { products: 'HHHHHH', result: 55},
+    { products: 'HHHHHHHHHH', result: 80},
+    { products: 'HHHHHHHHHHH', result: 90},
+
+    { products: 'I', result: 35},
+
+    { products: 'J', result: 60},
+
+    { products: 'K', result: 80},
+    { products: 'KK', result: 150},
+
+    { products: 'L', result: 90},
+
+    { products: 'M', result: 15},
+
+    { products: 'NNN', result: 120},
+    { products: 'NNNN', result: 160},
+    { products: 'NNM', result: 95},
+    { products: 'NNNM', result: 120},
+    { products: 'NNNMM', result: 135},
+    { products: 'NNNMMNNN', result: 240},
+
+    { products: 'O', result: 10},
+
+    { products: 'P', result: 50},
+    { products: 'PPPPP', result: 200},
+
+    { products: 'Q', result: 30},
+    { products: 'QQQ', result: 80},
+
+    { products: 'RRR', result: 150},
+    { products: 'RRRQ', result: 150},
+    { products: 'RRQ', result: 130},
+    { products: 'RRRQQ', result: 180},
+    { products: 'RRRQQRRR', result: 300},
+
+    { products: 'S', result: 30},
+
+    { products: 'T', result: 20},
+
+    { products: 'UUU', result: 120},
+    { products: 'UUUU', result: 120},
+    { products: 'UUUUU', result: 160},
+
+    { products: 'V', result: 50},
+    { products: 'VV', result: 90},
+    { products: 'VVV', result: 130},
+    { products: 'VVVV', result: 180},
+    { products: 'VVVVV', result: 220},
+
+    { products: 'W', result: 20},
+
+    { products: 'X', result: 90},
+
+    { products: 'Y', result: 10},
+
+    { products: 'Z', result: 50}
+
 ]
     .forEach(function (scenario) {
         exports['return the price of one product when multiple products are bought - ' + scenario] = function (test) {
