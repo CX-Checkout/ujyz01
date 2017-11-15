@@ -52,8 +52,8 @@ exports['return the price of promoted product with single products'] = function 
 
     { products: 'J', result: 60},
 
-    { products: 'K', result: 80},
-    { products: 'KK', result: 150},
+    { products: 'K', result: 70},
+    { products: 'KK', result: 120},
 
     { products: 'L', result: 90},
 
@@ -80,7 +80,7 @@ exports['return the price of promoted product with single products'] = function 
     { products: 'RRRQQ', result: 180},
     { products: 'RRRQQRRR', result: 300},
 
-    { products: 'S', result: 30},
+    { products: 'S', result: 20},
 
     { products: 'T', result: 20},
 
@@ -96,11 +96,17 @@ exports['return the price of promoted product with single products'] = function 
 
     { products: 'W', result: 20},
 
-    { products: 'X', result: 90},
+    { products: 'X', result: 17},
 
-    { products: 'Y', result: 10},
+    { products: 'Y', result: 20},
 
-    { products: 'Z', result: 50}
+    { products: 'Z', result: 21},
+
+    { products: 'STX', result: 45},
+    { products: 'STXYZ', result: 82},
+    { products: 'STXYZZ', result: 90},
+    { products: 'STXYZZA', result: 140},
+    { products: 'STXYZSTXYZZZ', result: 180}
 
 ]
     .forEach(function (scenario) {
