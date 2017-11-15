@@ -28,6 +28,11 @@ exports['return the price of promoted product with single products'] = function 
     { products: 'EEEEBB', result: 160},
     { products: 'EEEEBBB', result: 190},
     { products: 'EEEEB', result: 160},
+	{ products: 'FF', result: 20},
+    { products: 'FFF', result: 20},
+    { products: 'FFFF', result: 30},
+    { products: 'FFFFF', result: 40},
+    { products: 'FFFFFF', result: 40},
     { products: 'DD', result: 30}
 ]
     .forEach(function (scenario) {
